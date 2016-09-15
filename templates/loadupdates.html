@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="table">
+<tr>
+<th>Load Number</th>
+<th>Location</th>
+<th>Carrier</th>
+</tr>
+
+{% for i in loadupdates %}
+<tr>
+<td>{{ i.load_num }}</td>
+<td>{{ i.location }}</td>
+<td>{{ i.carrier }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
